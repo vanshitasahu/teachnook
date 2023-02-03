@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    scroll-behavior: smooth;
+}
+
+/*NAVBAR*/
+nav{
+    display: flex;
+    background: aqua;
+}
+.navbar-brand img{
+    margin-left: 3rem;
+    border-radius: 50%;
+}
+.navbar-nav{
+    margin-left: 30rem;
+text-align: center;
+align-items: center;
+}
+ 
+.nav-item{
+    padding-left: 3rem;
+    font-size: 1.5rem; 
+    font-size: 30px;
+}
+.nav-link:hover{
+    color: #00b894;
+}
+
+/*HOME SECTION*/
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("./taj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: aquamarine;
+}
+.home h3{
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.home h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+.home p {
+    font-size: 2rem;
+    word-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+}
+.change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+@keyframes changetext {
+    0% {
+        content: "Assam";
+    }
+
+    20% {
+        content: "Agra";
+    }
+
+    35% {
+        content: "Jaipur";
+    }
+
+    60% {
+        content: "kerala";
+    }
+
+    80% {
+        content: "delhi";
+    }
+
+    100% {
+        content: "Mumbai";
+    }
+}
+
+/*ABOUT SECTION*/
+.about {
+    padding: 5%;
+    line-height: 1.5;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+}
+.about h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+.about p {
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+/*GALLERY SECTION*/
+.gallery {
+    font-size: 20px;
+}
+.flip-card {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+   
+}
+.text{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    text-shadow: black;
+ 
+}
+.text h6{
+    color: BLACK;
+}
+.flip-card-back{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    
+    
+}
+.flip-card-back a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    
+    
+}
+.flip-card :hover{
+    color: #FF0063;
+    background-color: #EAF6F6;
+    border: 5px BLACK solid;
+    border-radius: 5px;
+
+
+}
+
+/*CONTACT SECTION*/
+footer{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2%;
+  color: black;
+  font-weight: bolder;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: purple;
+}
